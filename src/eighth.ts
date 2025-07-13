@@ -1,7 +1,7 @@
-// Create your own javascript code, and convert it to typescript
+// Create any JavaScript code and convert it to TypeScript, but did not copy the previous examples.
+// Just create your original code!
+// No Ai assistance, just your own code.
 
-// JavaScript Code
+// JavaScript code
 
-
-
-// TypeScript Code
+// TypeScript code
