@@ -14,6 +14,8 @@ function editNote(noteIndex, note) {
 console.log(editNote(0, { title: "Updated first title note", status: true, description: "This is an updated note description" }));
 console.log(notes6)
 
+
+
 // Answer in TypeScript
 // const notes6: Array<{ title: string; status: boolean; description: string }> = [
 //   { title: "First title note", status: true, description: "This is a note description" },

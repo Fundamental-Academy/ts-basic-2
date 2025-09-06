@@ -14,6 +14,8 @@ function deleteNote(noteIndex) {
 console.log(deleteNote(2));
 console.log(notes7);
 
+
+
 // Answer in TypeScript
 // const notes7: Array<{ title: string; status: boolean; description: string }> = [
 //   { title: "First title note", status: true, description: "This is a note description" },
