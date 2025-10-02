@@ -1,4 +1,3 @@
-// Convert this javascript code to typescript
 // Create an array of objects representing fruits with properties: name, price, quantity, and quality.
 // Use the following arrays to populate the objects: fruitNames, fruitPrices, fruitQuantities, fruitQualities.
 

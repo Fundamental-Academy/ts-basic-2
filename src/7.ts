@@ -1,4 +1,4 @@
-// Convert this javascript code to typescript
+// Fix this TypeScript code to remove all errors
 
 const notes7 = [
   { title: "First title note", status: true, description: "This is a note description" },
@@ -7,7 +7,7 @@ const notes7 = [
 ];
 
 function deleteNote(noteIndex) {
-  notes7.splice(noteIndex, 1);
+  // Remove the note at the specified index
   return { message: "Note deleted successfully" };
 }
 

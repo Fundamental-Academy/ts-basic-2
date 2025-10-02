@@ -1,4 +1,4 @@
-// Convert this javascript code to typescript
+// Fix this TypeScript code to remove all errors
 
 const notes5 = [
   { title: "First title note", status: true, description: "This is a note description" },
@@ -6,7 +6,7 @@ const notes5 = [
 ];
 
 function addNote(note) {
-  notes5.push(note);
+  // Add the new note to the array
   return notes5;
 }
 

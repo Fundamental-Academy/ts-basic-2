@@ -1,4 +1,4 @@
-// Convert this javascript code to typescript
+// Fix this TypeScript code to remove all errors
 
 const notes6 = [
   { title: "First title note", status: true, description: "This is a note description" },
@@ -7,7 +7,7 @@ const notes6 = [
 ];
 
 function editNote(noteIndex, note) {
-  notes6[noteIndex] = note;
+  // Update the note at the specified index
   return { message: "Note updated successfully" };
 }
 

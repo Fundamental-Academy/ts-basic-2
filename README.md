@@ -18,7 +18,7 @@ npm install --save-dev tsx
 npm run tsx your-file.ts
 ```
 
-or
+3. You also can run TypeScript code directly with tsx:
 
 ```
 tsx your-file.ts

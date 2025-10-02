@@ -1,4 +1,4 @@
-// Convert this javascript code to typescript
+// Fix this TypeScript code to remove all errors
 
 let myString = "Hello";
 myString = 2;
