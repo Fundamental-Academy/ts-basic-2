@@ -2,4 +2,4 @@
 // Just create your original code!
 // No Ai assistance, just your own code.
 
-// TypeScript code
+// JavaScript code
