@@ -4,12 +4,32 @@
 2. Node.js Environment
 3. Package Manager (npm/pnpm)
 
+## How to run TypeScript code:
+
+1. Install `tsx` dependencies:
+
+```
+npm install --save-dev tsx
+```
+
+2. Run TypeScript code:
+
+```
+npm run tsx your-file.ts
+```
+
+or
+
+```
+tsx your-file.ts
+```
+
 ## How to create a new project with TypeScript:
 
 1. Install typescript dependencies:
 
 ```
-npm install typescript
+npm install --save-dev typescript
 ```
 
 2. Initiate a TypeScript project:

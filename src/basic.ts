@@ -260,13 +260,9 @@ async function displayData() {
   console.log(postData.id);
   console.log(postData.title);
   console.log(postData.body);
+  console.log("")
+  console.log("Your TS environment is working fine!");
 }
 displayData()
 
 // #endregion
-
-// -----------------------------------------------------------------------------------
-
-// type vs interface // I am not sure if this is needed for basic, but for now, I will use type for consistency.
-// satisfies
-// any or unknown

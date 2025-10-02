@@ -1,9 +1,11 @@
 {
   "scripts": {
-    "dev": "tsc && node ./build/index.js",
-    "build": "tsc"
+    "dev": "tsc && node ./build/basic.js",
+    "build": "tsc",
+    "tsx": "tsx"
   },
   "devDependencies": {
+    "tsx": "^4.20.6",
     "typescript": "^5.8.2"
   }
 }
