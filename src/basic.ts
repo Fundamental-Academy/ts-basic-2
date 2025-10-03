@@ -21,26 +21,47 @@ console.log(myAnyVar); // Output: true
 
 // #endregion
 
+// #region Basic Union
+
+type MyColor = "Purple" | "Orange" | "Blue";
+
+const myColor1: MyColor = "Purple";
+
+const myColor2: MyColor = "Orange";
+
+const myColor3: MyColor = "orange";
+
+const myColor4: MyColor = true;
+
+const myColor5: MyColor = 123;
+
+const myColor6: MyColor = "Yellow";
+
+// #endregion
+
+// #region Basic Typeoff
+
+
+
+// #endregion
+
 // #region Basic Enum
 
-type TRGB = "Red" | "Green" | "Blue";
-
-enum RGB {
-  Red = "Red",
-  Green = "Green",
-  Blue = "Blue"
+enum TrafficLight {
+  Red = 1,
+  Yellow = 2,
+  Green = 3
 }
 
-// let myFavoriteColor: TRGB = "Yellow"; // Error: Type '"Yellow"' is not assignable to type 'TRGB'.
+let currentLight: number = 1;
 
-const myFavoriteColorEnum: TRGB = "Green";
-console.log(myFavoriteColorEnum); // Output: Green
-
-console.log(RGB.Blue); // Output: Blue
-
-const mySecondFavoriteColor: RGB = RGB.Red;
-
-console.log(mySecondFavoriteColor); // Output: Red
+if (currentLight === TrafficLight.Red) {
+  console.log("Stop")
+} else if (currentLight === TrafficLight.Yellow) {
+  console.log("Caution")
+} else if (currentLight === TrafficLight.Green) {
+  console.log("Go")
+}
 
 // #endregion
 
@@ -228,6 +249,48 @@ function identity<T>(arg: T): T {
 
 console.log(identity<string>("Hello"));
 console.log(identity<number>(42));
+
+const myDatabase = [
+  {
+    tableName: "fruit",
+    data: [
+      { name: "melon", count: 20 },
+      { name: "banana", count: 10 },
+      { name: "apple", count: 5 }
+    ],
+  },
+  {
+    tableName: "game",
+    data: [
+      { name: "The Legend of Zelda", genre: "Action-Adventure", playTime: 123 },
+      { name: "Super Mario Bros.", genre: "Platformer", playTime: 45 },
+      { name: "Genshin Impact", genre: "Gacha RPG", playTime: 60 }
+    ]
+  }
+]
+
+function getDataFromDatabase<T>(tableName: string, database: typeof myDatabase): T | string {
+
+  let currentData: T | undefined = undefined
+
+  database.forEach((table) => {
+    if (table.tableName === tableName) {
+      const data = table.data
+      currentData = data as T
+    }
+  });
+
+  if (currentData && (currentData as unknown[]).length > 0) {
+    return currentData
+  }
+
+  return `Table ${tableName} not found`;
+}
+
+console.log(getDataFromDatabase<{ name: string; count: number }[]>("fruit", myDatabase));
+console.log(getDataFromDatabase<{ name: string; genre: string; playTime: number }[]>("game", myDatabase));
+console.log(getDataFromDatabase<{ name: string; genre: string; price: number }[]>("vegetable", myDatabase));
+
 
 async function fetchPostData<T>(stringUrl: string): Promise<T> {
   // Like the browser fetch API, the default method is GET
