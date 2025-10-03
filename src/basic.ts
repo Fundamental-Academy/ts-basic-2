@@ -29,13 +29,13 @@ const myColor1: MyColor = "Purple";
 
 const myColor2: MyColor = "Orange";
 
-const myColor3: MyColor = "orange";
+// const myColor3: MyColor = "orange";
 
-const myColor4: MyColor = true;
+// const myColor4: MyColor = true;
 
-const myColor5: MyColor = 123;
+// const myColor5: MyColor = 123;
 
-const myColor6: MyColor = "Yellow";
+// const myColor6: MyColor = "Yellow";
 
 // #endregion
 
@@ -63,7 +63,7 @@ const mySisterShirt: typeof shirt = {
   prize: 120000,
   material: "cotton",
   merk: "uniqlo",
-  year: 2025
+  // year: 2025
 }
 
 // #endregion

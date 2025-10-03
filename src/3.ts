@@ -27,24 +27,3 @@ const fruitData = [];
 // write the looping code to create the array of objects
 
 console.log(fruitData);
-
-
-
-// Answer in TypeScript
-// const fruitNames = ["apple", "banana", "orange", "grape", "kiwi"];
-// const fruitPrices = [1.2, 0.5, 0.8, 2.0, 1.5];
-// const fruitQuantities = [10, 5, 7, 3, 8];
-// const fruitQualities = ["fresh", "ripe", "overripe", "fresh", "ripe"];
-
-// const fruitData: Array<{ name: string; price: number; quantity: number; quality: string }> = [];
-
-// fruitNames.forEach((name, index) => {
-//   fruitData.push({
-//     name: name,
-//     price: fruitPrices[index],
-//     quantity: fruitQuantities[index],
-//     quality: fruitQualities[index]
-//   });
-// });
-
-// console.log(fruitData);

@@ -4,7 +4,7 @@
 
 let role = 3;
 
-function dashboard (role) {
+function dashboard(role) {
   if (role === 1) {
     return "Welcome Owner, You can access and edit all data.";
   } else if (role === 2) {
@@ -17,30 +17,3 @@ function dashboard (role) {
 }
 
 console.log(dashboard(role));
-
-
-
-// Answer in TypeScript
-// enum SystemRole {
-//   Owner = 1,
-//   Admin = 2,
-//   Visitor = 3
-// }
-
-// type SystemRoleNumber = 1 | 2 | 3
-
-// let role: SystemRoleNumber = 3;
-
-// function dashboard (role: SystemRoleNumber): string {
-//   if (role === SystemRole.Owner) {
-//     return "Welcome Owner, You can access and edit all data.";
-//   } else if (role === SystemRole.Admin) {
-//     return "Welcome Admin, You can access all data, but you can only edit several not critical data";
-//   } else if (role === SystemRole.Visitor) {
-//     return "Welcome Visitor, You can only access your data";
-//   } else {
-//     return "Please login to access data"
-//   }
-// }
-
-// console.log(dashboard(role));
