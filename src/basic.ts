@@ -39,9 +39,32 @@ const myColor6: MyColor = "Yellow";
 
 // #endregion
 
-// #region Basic Typeoff
+// #region Basic Typeof
 
+const shirt = {
+  color: "black",
+  size: "XXL",
+  prize: 150000,
+  material: "cotton",
+  merk: "uniqlo"
+}
 
+const myShirt: typeof shirt = {
+  color: "white",
+  size: "L",
+  prize: 110000,
+  material: "cotton",
+  merk: "adidas"
+}
+
+const mySisterShirt: typeof shirt = {
+  color: "pink",
+  size: "XL",
+  prize: 120000,
+  material: "cotton",
+  merk: "uniqlo",
+  year: 2025
+}
 
 // #endregion
 
@@ -290,6 +313,7 @@ function getDataFromDatabase<T>(tableName: string, database: typeof myDatabase):
 console.log(getDataFromDatabase<{ name: string; count: number }[]>("fruit", myDatabase));
 console.log(getDataFromDatabase<{ name: string; genre: string; playTime: number }[]>("game", myDatabase));
 console.log(getDataFromDatabase<{ name: string; genre: string; price: number }[]>("vegetable", myDatabase));
+
 
 
 async function fetchPostData<T>(stringUrl: string): Promise<T> {
